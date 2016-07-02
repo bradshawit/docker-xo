@@ -37,6 +37,6 @@ ADD launch.sh /launch.sh
 
 RUN chmod +x "/launch.sh"
 
-EXPOSE 8098
+EXPOSE 80
 
 CMD ["/launch.sh"]
