@@ -31,6 +31,8 @@ ADD xo-server.yaml /var/lib/xo-server/.xo-server.yaml
 RUN cd /var/lib/xo-web && \
     npm install && \
     npm run build
+    
+RUN npm install -g forever
 
 ADD launch.sh /launch.sh
 
