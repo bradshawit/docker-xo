@@ -20,7 +20,6 @@ RUN cd /var/lib && \
     git clone -b stable http://github.com/vatesfr/xo-server && \
     git clone -b stable http://github.com/vatesfr/xo-web
 
-
 RUN cd /var/lib/xo-server && \
     npm install && \
     npm run build && \
