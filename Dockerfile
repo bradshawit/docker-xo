@@ -37,7 +37,7 @@ RUN mkdir /etc/redis && \
     mkdir /var/redis && \
     mkdir /var/redis/6379
 
-RUN cp /redis-stable/utils/redis_init_script /etc/init.d/redis_6379
+ADD redis_init_script /etc/init.d/redis_6379
 
 ADD 6379.conf /etc/redis/6379.conf
 
