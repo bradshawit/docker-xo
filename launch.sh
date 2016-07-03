@@ -2,6 +2,8 @@
 
 set -e
 
+rm -f /var/run/redis_6379.pid
+
 # forever start /var/lib/xo-server
 /etc/init.d/redis_6379 start
 
