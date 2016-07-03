@@ -41,6 +41,8 @@ RUN cp /redis-stable/utils/redis_init_script /etc/init.d/redis_6379
 
 ADD 6379.conf /etc/redis/6379.conf
 
+RUN update-rc.d redis_6379 defaults
+
 ADD launch.sh /launch.sh
 
 RUN chmod +x "/launch.sh"
