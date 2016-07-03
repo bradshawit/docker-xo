@@ -39,6 +39,8 @@ RUN mkdir /etc/redis && \
 
 ADD redis_init_script /etc/init.d/redis_6379
 
+RUN chmod +x /etc/init.d/redis_6379
+
 ADD 6379.conf /etc/redis/6379.conf
 
 RUN update-rc.d redis_6379 defaults
