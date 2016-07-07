@@ -7,6 +7,7 @@ RUN apt-get update -q && \
     apt-get install -qy python-minimal && \
     apt-get install -qy git wget && \
     apt-get clean
+    
 
 ADD ["http://download.redis.io/redis-stable.tar.gz", "/redis-stable.tar.gz"]
 
